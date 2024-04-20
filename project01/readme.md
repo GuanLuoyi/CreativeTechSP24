@@ -2,8 +2,9 @@
 ## Overview
 In recent years on China's social media platform "Weibo," a phenomenon known as "zombie literature" has emerged. This is essentially social media bots randomly extracting text from the internet to generate paragraphs. The mechanically constructed text, through chaotic fetching and ordering, inadvertently creates poetry. This connects with the Infinite Monkey Theorem, where if you give a monkey a typewriter and enough time, it will inevitably type out a Shakespearean sonnet. The disorderly and chaotic text, through random combinations, generates poetry, akin to a rose of poetry blooming from the cyber junk. This application visualizes this concept by generating random words, composing poetry from these words, and finally rendering images inspired by the poetry.
 
+https://github.com/GuanLuoyi/CreativeTechSP24/assets/95225808/daaed477-e249-4d97-85fe-aa0328791e7f
 
-https://github.com/GuanLuoyi/CreativeTechSP24/assets/95225808/6e941d1f-e8e8-47bd-8f79-6517e1915bdf
+
 
 ## Usage
 ### Generating Words
