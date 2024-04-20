@@ -1,14 +1,21 @@
 body {
     margin: 0;
     padding: 0;
-    background-color:black;
+    background-color: black;
     display: flex;
     flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    justify-content: space-between;
     align-items: center;
-    font-family: 'Times New Roman', Times, serif;
+    color: #fafafa;
+}
+
+/* Add a container to wrap all content for vertical centering */
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 svg {
@@ -19,73 +26,53 @@ svg {
 }
 
 header {
-    color:white;
-    height: 150px;
+    color: white;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    width: 100%;
     justify-content: center;
+    width: 100%;
 }
 
-.bottom-section {
-    width: 100%;
+button {
+    background: #eb94d0;
+    background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
+    border-radius: 28px;
+    box-shadow: 6px 5px 24px #666666;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fafafa;
+    font-size: 16px;
+    padding: 19px;
+    text-decoration: none;
+    margin-top: 5vh; /* Add some space above the button */
+}
+
+.text-section {
+    width: 80vw; /* Adjust the width as necessary */
+    height: 40vh; /* Adjust height as needed */
+    font-size: 48px;
     display: flex;
-    justify-content: center;
-    height: 150px;
+    flex-wrap: wrap; /* If words overflow they wrap to next line */
+    margin: 1vh 0; /* Add some vertical space */
 }
 
-.input-container {
-    width: 100%;
-    max-width: 600px;
-    position: relative;
+.word {
+    margin: 5px; /* Add some space around each word */
 }
 
-input{
-    width: 100%;
-    border: none;
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: rgb(215, 223, 230) 0 20px 30px -10px;
-    box-sizing: border-box;
+#poem-section, #img-section {
+    width: 80vw; /* Set a max width for consistency */
+    font-size: large;
+    margin: 1vh 0; /* Add some vertical space */
+    padding-top: 5%;
 }
 
-#submit-icon{
-    font-size: 30px;
-    position: absolute;
-    top: 3px;
-    right: 30px;
+/* Add a max height to the image section and make it scrollable if the content is too tall */
+#img-section {
+    display: flex; /* Use flexbox to center contents */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 80vw; /* Set a max width for consistency */
+    max-height: 50vh; /* Adjust based on your preference */
+    margin: 2vh 0; /* Add some vertical space */
 }
 
-#submit-icon:hover{
-    cursor: pointer;
-}
-
-.images-section{
-    width: 100%;
-    max-width: 600px;
-    display: grid;
-    grid-template-rows: 50% 50%;
-    grid-template-columns: 50% 50%;
-    padding: 10px;
-}
-
-canvas {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    z-index: -10;
-}
-
-.image-container {
-    /* border-radius: 15px; */
-    overflow: hidden;
-    margin: 5px;
-}
-
-.image-container img{
-    width: 100%;
-}
