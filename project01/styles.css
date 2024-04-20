@@ -43,13 +43,14 @@ button {
     font-size: 16px;
     padding: 19px;
     text-decoration: none;
-    margin-top: 5vh; /* Add some space above the button */
+    z-index: 10;
+    margin-top: 5vh; 
 }
 
 .text-section {
     width: 80vw; /* Adjust the width as necessary */
     height: 40vh; /* Adjust height as needed */
-    font-size: 48px;
+    font-size: 36px;
     display: flex;
     flex-wrap: wrap; /* If words overflow they wrap to next line */
     margin: 1vh 0; /* Add some vertical space */
